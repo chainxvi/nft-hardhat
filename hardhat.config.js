@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-require("@nomiclabs/hardhat-etherscan");
+require("@nomiclabs/hardhat-etherscan"); // are all the necessary packages imported, and downloaded in your package.json?
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-ethers");
 require("hardhat-gas-reporter");
@@ -26,7 +26,7 @@ module.exports = {
   },
   networks: {
     hardhat: {
-      chainId: 1337,
+      chainId: 31337,
       blockConfirmations: 1,
       forking: {
         url: process.env.MAINNET_RPC_URL || "",
