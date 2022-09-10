@@ -43,7 +43,7 @@ describe('RAYC', function () {
   describe('withdraw', function() {
     it('the amount of the contract is 0 after withdrawing', async function() {
       await randomApeYachtClub.withdraw();
-      const provider = ethers.provider;
+      const provider = ethers.provider; // fix this as per the PR description, i.e. use ethers.getDefaultProvider
       const balance = await provider.getBalance(randomApeYachtClub.address);
       expect(balance).to.equal(0);
     });
