@@ -12,13 +12,13 @@ module.exports = {
       mintFee: ethers.utils.parseEther('0.1'),
     },
     // hardhat network config
-    1337: {
+    31337: { 
       name: 'hardhat',
       keyHash: '0xd89b2bf150e3b9e13446986e571fb9cab24b13cea0a43ea20a6049a85cc807cc',
-      callbackGasLimit: 100000,
+      callbackGasLimit: 100000, // verify this
       subscriptionId: 7761,
       mintFee: ethers.utils.parseEther('0.1'),
     },
   },
-  devChains: ['hardhat', 'localhost']
+  devChains: ['hardhat', 'localhost'] // as well as this, is the scope correct?
 }
