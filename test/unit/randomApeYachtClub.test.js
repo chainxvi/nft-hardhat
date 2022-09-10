@@ -5,7 +5,7 @@ const { devChains, networkConfig } = require('../../network.config');
 !devChains.includes(network.name) ?
 describe.skip : 
 describe('RAYC', function () {
-  let randomApeYachtClub, vrfCoordinatorV2Mock, deployer;
+  let randomApeYachtClub, vrfCoordinatorV2Mock, deployer, accounts;
   const mintFee = networkConfig[network.config.chainId].mintFee;
 
   beforeEach(async function() {
